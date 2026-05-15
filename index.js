@@ -17,6 +17,6 @@ while (i < angka.length){
 
         i++
 }
-console.log(`nilai  dari array: ${max}`)
+console.log(`nilai  terbesar array: ${max}`)
 console.log(`nilai terkecil dari array: ${min}`)
 console.log(`rata rata nilai array: ${total/angka.length}`)

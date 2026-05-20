@@ -1,22 +1,34 @@
-const angka = [20,65,43,12,54]
+const angka = [3,4,8,10,45,23,17,15];
 
-let i = 0
-let max = angka[0]
-let min = angka[0]
-let total = 0
+function hitungNilai(input){
+  let i = 0;
+  let min = input[0];
+  let max = input[0];
+  let total = 0;
+  if (!(Array.isArray(input))){
+    throw new Error("Input harus berupa array");
+  }
+  try{
+    while (i < input.length){
+      if (input[i] > max) {
+        max = input[i];       
+      }
 
-while (i < angka.length){
-        if (angka[i] > max) {
-            max = angka[i]       
-        }
+      if (input[i] < min){
+        min = input[i];       
+      }
+      total += input[i];
 
-        if (angka[i] < min){
-            min = angka[i]       
-        }
-        total += angka[i]
+      i++;
+    }
+    console.log(`nilai terbesar array: ${max}`);
+    console.log(`nilai terkecil dari array: ${min}`);
+    console.log(`rata rata nilai array: ${total/angka.length}`);
+  }catch(err){
+    console.error("Pesan Eror: ", err);
+    
+  }
 
-        i++
 }
-console.log(`nilai terbesar array: ${max}`)
-console.log(`nilai terkecil dari array: ${min}`)
-console.log(`rata rata nilai array: ${total/angka.length}`)
+
+hitungNilai(angka);

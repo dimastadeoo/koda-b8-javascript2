@@ -8,6 +8,10 @@ function hitungNilai(input){
   if (!(Array.isArray(input))){
     throw new Error("Input harus berupa array");
   }
+  const cekarr = input.every(item => typeof item === 'number' && Number.isFinite(item));
+  if(!cekarr){
+    throw new Error("nilai semua indeks dalam array harus berupa number");
+  }
   try{
     while (i < input.length){
       if (input[i] > max) {

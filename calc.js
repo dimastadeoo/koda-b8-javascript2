@@ -1,3 +1,17 @@
+/**
+ * @typedef {object} processData 
+ * @property {number} min smallest value of the array
+ * @property {number} max largest value of the array
+ * @property {number} average the average value of the array
+ */
+
+/**
+ * 
+ * @param {Array.<number>} input An array containing numbers.
+ * @returns {processData} an object with min, max, and average
+ */
+
+
 exports.hitungNilai = (input)=>{
   let i = 0;
   let min = 9999999999999;

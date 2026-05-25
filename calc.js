@@ -1,7 +1,7 @@
 exports.hitungNilai = (input)=>{
   let i = 0;
-  let min = input[0];
-  let max = input[0];
+  let min = 9999999999999;
+  let max = -999999999999;
   let total = 0;
   if (!(Array.isArray(input))){
     throw new Error("parameter must be array");

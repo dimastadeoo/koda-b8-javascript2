@@ -13,19 +13,19 @@ exports.hitungNilai = (input)=>{
   if(!cekarr){
     throw new Error("array parameters value all must be number");
   }
-    while (i < input.length){
-      if (input[i] > max) {
-        max = input[i];       
-      }
-
-      if (input[i] < min){
-        min = input[i];       
-      }
-      total += input[i];
-
-      i++;
+  while (i < input.length){
+    if (input[i] > max) {
+      max = input[i];       
     }
-    const average = total / input.length
-    return {min, max, average}
+
+    if (input[i] < min){
+      min = input[i];       
+    }
+    total += input[i];
+
+    i++;
+  }
+  const average = total / input.length;
+  return {min, max, average};
 
 };

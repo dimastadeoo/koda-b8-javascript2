@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test",
-    "test:coverage": "node --test --experimental-test-coverage"
+    "test:coverage": "node --test --experimental-test-coverage",
+    "lint": "eslint ./*.js",
+    "lint:fix": "eslint ./*.js --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dimastadeoo/koda-b8-javascript2.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "dimastadeoo",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -20,6 +22,9 @@
   },
   "homepage": "https://github.com/dimastadeoo/koda-b8-javascript2#readme",
   "devDependencies": {
-    "@types/node": "^25.9.1"
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0"
   }
 }

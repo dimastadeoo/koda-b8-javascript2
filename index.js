@@ -1,4 +1,4 @@
-const {hitungNilai} = require("./calc.js")
+const {hitungNilai} = require("./calc.js");
 
 try{
   const angka = [3,4,8,10,45,23,17,15];

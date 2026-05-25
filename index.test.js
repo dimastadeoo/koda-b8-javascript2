@@ -5,7 +5,7 @@ const { hitungNilai } = require("./calc");
 describe("Calculation process", ()=>{
   it("should return funtion is a object", ()=>{
     const nilai = [6,2,8,7,8];
-    assert.equal(typeof hitungNilai(nilai), "object")
+    assert.equal(typeof hitungNilai(nilai), "object");
   });
   it("should Error when parameter array values is empthy", ()=>{
     const nilai = [];
@@ -20,4 +20,4 @@ describe("Calculation process", ()=>{
     assert.throws(()=> hitungNilai(nilai), {message:"parameter must be array"});
   });
 
-})
+});

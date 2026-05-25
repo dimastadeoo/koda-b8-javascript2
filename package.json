@@ -1,0 +1,25 @@
+{
+  "name": "koda-b8-javascript2",
+  "version": "1.0.0",
+  "description": "Algoritma ini menjelaskan alur program hitung nilai dengan proses Max, Min, dan Average dengan Flowchart",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimastadeoo/koda-b8-javascript2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dimastadeoo/koda-b8-javascript2/issues"
+  },
+  "homepage": "https://github.com/dimastadeoo/koda-b8-javascript2#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1"
+  }
+}
